@@ -1,0 +1,7 @@
+{
+  "name": "ndougou-mi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

@@ -1,0 +1,300 @@
+/* --- COMPOSANT FINANCIER ÉPURÉ --- */
+.financier-tab-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 24px;
+}
+
+.fin-section-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #888;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 14px;
+}
+
+.fin-section-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fin-see-all {
+  font-size: 0.78rem;
+  color: #666;
+  font-weight: 500;
+  margin-top: 14px;
+}
+
+/* 1. Carte Chiffre d'affaires verte */
+.ca-green-card {
+  background-color: #2e7d32; /* Ton vert foncé fétiche */
+  border-radius: 18px;
+  padding: 18px;
+  color: white;
+}
+
+.ca-header {
+  font-size: 0.7rem;
+  font-weight: 700;
+  opacity: 0.9;
+  letter-spacing: 0.3px;
+}
+
+.ca-green-card h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 8px 0 4px 0;
+}
+
+.currency-label {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.ca-trend {
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  opacity: 0.9;
+}
+
+/* Ligne d'illustration du graphique blanc */
+.ca-mini-chart-line {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.1) 100%);
+  margin: 24px 0 16px 0;
+}
+
+.ca-footer-row {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 12px;
+}
+
+.ca-footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-title {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-bottom: 2px;
+}
+
+.col-val {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.col-val-green {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #a5d6a7; /* Vert clair pour faire ressortir le bénéfice */
+}
+
+/* 2. Bloc Paiement Urgent */
+.urgent-payment-card {
+  background-color: #fff9c4; /* Fond jaune sable/alerte */
+  border: 1px solid #fff59d;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.urgent-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.urgent-icon-bg {
+  width: 36px;
+  height: 36px;
+  background-color: #fff59d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f57f17;
+  font-size: 1.2rem;
+}
+
+.urgent-details h4 {
+  margin: 0 0 2px 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.urgent-details p {
+  margin: 0;
+  font-size: 0.78rem;
+  color: #666;
+}
+
+.urgent-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.urgent-amount {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #222;
+}
+
+.urgent-currency {
+  font-size: 0.7rem;
+  color: #666;
+  font-weight: 600;
+}
+
+/* 3. Contrats Actifs */
+.contracts-list {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.01);
+}
+
+.contract-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.contract-item:last-child {
+  border-bottom: none;
+}
+
+.contract-left h4 {
+  margin: 0 0 3px 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.contract-left p {
+  margin: 0;
+  font-size: 0.78rem;
+  color: #777;
+}
+
+.contract-amount {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #222;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.contract-status {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.status-paye { color: #2e7d32; }
+.status-signe { color: #1565c0; }
+.status-nego { color: #757575; }
+
+/* 4. Crédit CNCAS */
+.cncas-card {
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.01);
+}
+
+.cncas-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.cncas-lbl {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.cncas-title-block h3 {
+  margin: 2px 0 0 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #222;
+}
+
+.cncas-badge {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.cncas-progress-container {
+  width: 100%;
+  height: 6px;
+  background-color: #eee;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.cncas-progress-fill {
+  height: 100%;
+  background-color: #2e7d32;
+}
+
+.cncas-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: #777;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.cncas-alert-row {
+  background-color: #fff3e0;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: #e65100;
+}
+
+.cncas-alert-row ion-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* 5. Bouton d'action orange tout en bas */
+.publish-harvest-btn {
+  background-color: #e65100; /* Orange vif de ta maquette */
+  color: white;
+  border: none;
+  width: 100%;
+  height: 46px;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin-top: 10px;
+  cursor: pointer;
+}

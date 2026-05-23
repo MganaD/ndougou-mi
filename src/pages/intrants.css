@@ -1,0 +1,257 @@
+/* --- COMPOSANT INTRANTS --- */
+.intrants-tab-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 30px;
+}
+
+.intrants-section-header {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #777;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.intrants-section-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.intrants-see-all {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Grille des 2 compteurs du haut */
+.intrants-stats-grid {
+  display: flex;
+  gap: 12px;
+}
+
+.intrant-stat-card {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+
+.intrant-stat-card ion-icon {
+  font-size: 1.6rem;
+}
+
+.status-critical ion-icon { color: #d32f2f; }
+.status-normal ion-icon { color: #1976d2; }
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-num {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #222;
+}
+
+.stat-text {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+/* Liste des stocks */
+.intrants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.intrant-item-card {
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+
+.intrant-item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.intrant-icon-bg {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.color-orange { background-color: #fff3e0; }
+.color-red { background-color: #ffebee; }
+.color-green { background-color: #e8f5e9; }
+
+.intrant-details h4 {
+  margin: 0 0 2px 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.intrant-details p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.text-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.intrant-qty {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.danger-text { color: #c62828; }
+.success-text { color: #2e7d32; }
+
+.intrant-status-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.danger-bg { background-color: #ffebee; color: #c62828; }
+.success-bg { background-color: #e8f5e9; color: #2e7d32; }
+
+/* Grille Fluides & Ressources */
+.fluids-grid {
+  display: flex;
+  gap: 12px;
+}
+
+.fluid-card {
+  flex: 1;
+  background: white;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+
+.fluid-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.icon-blue { font-size: 1rem; color: #1976d2; }
+.icon-emoji { font-size: 0.9rem; }
+
+.fluid-body h3 {
+  margin: 0 0 2px 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #222;
+}
+
+.fluid-body p {
+  margin: 0 0 8px 0;
+  font-size: 0.7rem;
+  color: #888;
+}
+
+.fluid-progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #eaeaea;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.fluid-progress-fill {
+  height: 100%;
+}
+.fill-blue { background-color: #1976d2; }
+.fill-yellow { background-color: #fbc02d; }
+
+/* Bloc Main d'œuvre */
+.labor-card {
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+
+.labor-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #f9f9f9;
+  padding-bottom: 6px;
+}
+
+.labor-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.labor-role {
+  color: #555;
+  font-weight: 500;
+}
+
+.labor-count {
+  font-weight: 700;
+  color: #222;
+}
+
+.fluid-body h3 sup {
+  font-size: 0.6em;
+  vertical-align: super;
+  margin-left: 2px;
+}
+/* Bouton vert d'action */
+.intrants-main-btn {
+  background-color: #2e7d32; /* On reste sur ton vert foncé pour varier */
+  border: none;
+  color: white;
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  box-shadow: 0 4px 10px rgba(46, 125, 50, 0.15);
+  cursor: pointer;
+}

@@ -1,0 +1,136 @@
+.login-background {
+  --background: #2e7d32;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding: 20px;
+}
+
+.login-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.login-header h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.login-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 5px 0 0 0;
+}
+
+.login-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.login-card h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.input-label {
+  display: block;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.profile-selector {
+  margin-bottom: 15px;
+}
+
+.profile-box {
+  background: #f0f0f0;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0 4px;
+}
+
+/* --- COMPORTEMENT PRODUCTEUR (VERT) --- */
+.producteur-box.active {
+  background: #e8f5e9; /* Fond vert très clair */
+  border-color: #2e7d32; /* Bordure verte */
+}
+
+.login-btn-green {
+  --background: #2e7d32; /* Bouton Vert */
+  --border-radius: 12px;
+  margin-top: 25px;
+  font-weight: bold;
+  height: 48px;
+}
+
+/* --- COMPORTEMENT ACHETEUR (ORANGE) --- */
+.acheteur-box.active {
+  background: #fff3e0; /* Fond orange très clair */
+  border-color: #ef6c00; /* Bordure orange */
+}
+
+.login-btn-orange {
+  --background: #ef6c00; /* Bouton Orange */
+  --border-radius: 12px;
+  margin-top: 25px;
+  font-weight: bold;
+  height: 48px;
+}
+
+.custom-input {
+  --background: #f0f0f0;
+  --padding-start: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.signup-link {
+  text-align: center;
+  color: #555;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.signup-link span {
+  font-weight: bold;
+  color: #2e7d32;
+  cursor: pointer;
+}
+
+/* Change uniquement le texte à l'intérieur des cases de profil en noir */
+.profile-box .profile-text {
+  font-size: 0.9rem;
+  font-weight: 700 !important;
+  color: #000000 !important; /* Vrai noir pour Producteur/Acheteur */
+}
+
+/* Force le sous-titre de l'en-tête à rester en blanc */
+.login-header p {
+  color: #ffffff !important;
+  opacity: 0.9;
+}

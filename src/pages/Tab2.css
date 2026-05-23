@@ -1,0 +1,162 @@
+/* Couleur de fond générale de l'application */
+.bg-light-gray {
+  --background: #f4f6f8;
+}
+
+/* Grand conteneur vert du haut */
+.gie-header-container {
+  background-color: #2e7d32; /* Ton vert foncé signature */
+  padding: 24px 16px 20px 16px;
+  color: white;
+}
+
+.gie-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.gie-subtitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  display: block;
+}
+
+.gie-title-block h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.gie-location {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+/* Bouton plus (+) orange */
+.gie-fab-add {
+  background-color: #e65100; /* Orange vif */
+  border: none;
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Alignement horizontal des 3 sous-cartes */
+.gie-indicators-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.gie-indicator-card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 12px;
+  flex: 1;
+  min-width: 100px;
+}
+
+.gie-card-icon-row ion-icon {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.gie-indicator-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 6px 0 2px 0;
+}
+
+.gie-indicator-card h3 .unit {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.gie-indicator-card p {
+  font-size: 0.75rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Barre grise des onglets horizontaux */
+.gie-subtabs-bar {
+  display: flex;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 4px;
+}
+
+.gie-subtab-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #888;
+  font-size: 0.75rem;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+
+.gie-subtab-btn ion-icon {
+  font-size: 1.2rem;
+}
+
+/* Style de l'onglet actif (ligne verte en dessous) */
+.gie-subtab-btn.active {
+  color: #2e7d32;
+}
+
+.gie-subtab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 70%;
+  height: 3px;
+  background-color: #2e7d32;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+/* Zone de contenu sous les onglets */
+.gie-tab-content-area {
+  padding: 16px;
+}
+
+.tab-placeholder-content {
+  text-align: center;
+  color: #777;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+/* Barre de navigation basse */
+.custom-tab-bar {
+  --background: #ffffff;
+  border-top: 1px solid #e0e0e0;
+}
+
+.custom-tab-btn {
+  color: #777;
+}
+
+.custom-tab-btn[selected] {
+  color: #2e7d32;
+}
